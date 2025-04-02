@@ -1,53 +1,88 @@
-<style>
-  body {
-    background-color: #121212;
-    color: white;
-    font-family: sans-serif;
-    direction: rtl;
-  }
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>کس کی چی خورده؟</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-  .container {
-    max-width: 600px;
-    margin: 40px auto;
-    background-color: #1e1e1e;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(255,255,255,0.1);
-  }
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
 
-  .item-block {
-    background-color: #2a2a2a;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
+    h2 {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
 
-  .item-block label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 16px;
-  }
+    .item-block {
+      background-color: #2a2a2a;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      text-align: right;
+    }
 
-  .item-block input {
-    width: 100%;
-    padding: 8px;
-    border: none;
-    border-radius: 6px;
-    font-size: 14px;
-    background-color: #3a3a3a;
-    color: white;
-  }
+    .item-block label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-  .btn-submit {
-    background-color: #007bff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 100%;
-  }
-</style>
+    .item-block input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #3a3a3a;
+      color: white;
+    }
+
+    .btn-submit {
+      background-color: #007bff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>لطفاً مشخص کنید چه کسی چه غذایی خورده</h2>
+    <form method="POST" action="https://n8n.yourdomain.com/webhook/submit-form">
+      <div class="item-block">
+        <label>sushiant roll – ۱,۰۰۰,۰۰۰ تومان</label>
+        <input type="text" name="sushiant_roll" placeholder="اسم مورد نظر را وارد کنید" />
+      </div>
+
+      <div class="item-block">
+        <label>spicy salmon roll – ۱,۱۵۰,۰۰۰ تومان</label>
+        <input type="text" name="spicy_salmon_roll" placeholder="اسم مورد نظر را وارد کنید" />
+      </div>
+
+      <input type="hidden" name="sessionId" value="2025-04-01T18:23:55.382+03:30" />
+      <input type="submit" class="btn-submit" value="✅ ثبت نهایی" />
+    </form>
+  </div>
+</body>
+</html>
