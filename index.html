@@ -4,7 +4,6 @@
       <meta charset="UTF-8" />
       <title>سفارش غذا</title>
       <style>
-        /* --- اینجا همون CSS بالاست --- */
         body {
           font-family: Vazirmatn, sans-serif;
           background-color: #f8f9fa;
@@ -26,7 +25,7 @@
         input[type="text"] {
           width: 100%;
           padding: 8px;
-          margin-bottom: 15px;
+          margin-bottom: 10px;
           border: 1px solid #ccc;
           border-radius: 5px;
         }
@@ -39,7 +38,9 @@
           border-radius: 5px;
           cursor: pointer;
           font-weight: bold;
-          margin-top: 10px;
+          margin-top: 20px;
+          display: block;
+          width: 100%;
         }
 
         button:hover {
@@ -65,31 +66,168 @@
     <body>
       <h2>لطفاً مشخص کنید چه کسی چه غذایی خورده</h2>
       <form method="POST" action="https://n8n.yourdomain.com/webhook/submit-form">
-        <label>sushiant roll - 1,090,000 تومان</label><input type="text" name="sushiant roll" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>sushiant roll - 1,090,000 تومان</label><input type="text" name="sushiant roll" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>spicy salmon roll - 1,150,000 تومان</label><input type="text" name="spicy salmon roll" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>rock shrimp - 1,190,000 تومان</label><input type="text" name="rock shrimp" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>fried fish - 9,900,000 تومان</label><input type="text" name="fried fish" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>sushiantdrink - 1,800,000 تومان</label><input type="text" name="sushiantdrink" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>ginger lemonade - 1,820,000 تومان</label><input type="text" name="ginger lemonade" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>crispy noodle - 6,400,000 تومان</label><input type="text" name="crispy noodle" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>coca zero - 370,000 تومان</label><input type="text" name="coca zero" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>coca zero - 370,000 تومان</label><input type="text" name="coca zero" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>Shisaido Roll - 1,090,000 تومان</label><input type="text" name="Shisaido Roll" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>capri roll - 1,800,000 تومان</label><input type="text" name="capri roll" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>ginger mojito - 1,050,000 تومان</label><input type="text" name="ginger mojito" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>sea salad - 1,120,000 تومان</label><input type="text" name="sea salad" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>garlic steak - 3,050,000 تومان</label><input type="text" name="garlic steak" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>ocean roll - 1,550,000 تومان</label><input type="text" name="ocean roll" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>nigiri salmon - 1,450,000 تومان</label><input type="text" name="nigiri salmon" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>chicken cream - 330,000 تومان</label><input type="text" name="chicken cream" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>chicken cream - 330,000 تومان</label><input type="text" name="chicken cream" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>mojito - 1,450,000 تومان</label><input type="text" name="mojito" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>lemonade - 660,000 تومان</label><input type="text" name="lemonade" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>mineral - 330,000 تومان</label><input type="text" name="mineral" placeholder="لطفا اسم افراد را وارد کنید" />
-<label>mineral - 330,000 تومان</label><input type="text" name="mineral" placeholder="لطفا اسم افراد را وارد کنید" />
-        <input type="hidden" name="sessionId" value="2025-04-02T22:26:12.067+03:30" />
-        <br />
+        <label>sushiant roll - 1,090,000 تومان</label>
+<input type="text" name="sushiant roll" placeholder="اسم نفر 1 baraye sushiant roll" />
+<input type="text" name="sushiant roll" placeholder="اسم نفر 2 baraye sushiant roll" />
+<input type="text" name="sushiant roll" placeholder="اسم نفر 3 baraye sushiant roll" />
+<input type="text" name="sushiant roll" placeholder="اسم نفر 4 baraye sushiant roll" />
+<input type="text" name="sushiant roll" placeholder="اسم نفر 5 baraye sushiant roll" />
+
+<label>sushiant roll - 1,090,000 تومان</label>
+<input type="text" name="sushiant roll" placeholder="اسم نفر 1 baraye sushiant roll" />
+<input type="text" name="sushiant roll" placeholder="اسم نفر 2 baraye sushiant roll" />
+<input type="text" name="sushiant roll" placeholder="اسم نفر 3 baraye sushiant roll" />
+<input type="text" name="sushiant roll" placeholder="اسم نفر 4 baraye sushiant roll" />
+<input type="text" name="sushiant roll" placeholder="اسم نفر 5 baraye sushiant roll" />
+
+<label>spicy salmon roll - 1,150,000 تومان</label>
+<input type="text" name="spicy salmon roll" placeholder="اسم نفر 1 baraye spicy salmon roll" />
+<input type="text" name="spicy salmon roll" placeholder="اسم نفر 2 baraye spicy salmon roll" />
+<input type="text" name="spicy salmon roll" placeholder="اسم نفر 3 baraye spicy salmon roll" />
+<input type="text" name="spicy salmon roll" placeholder="اسم نفر 4 baraye spicy salmon roll" />
+<input type="text" name="spicy salmon roll" placeholder="اسم نفر 5 baraye spicy salmon roll" />
+
+<label>rock shrimp - 1,190,000 تومان</label>
+<input type="text" name="rock shrimp" placeholder="اسم نفر 1 baraye rock shrimp" />
+<input type="text" name="rock shrimp" placeholder="اسم نفر 2 baraye rock shrimp" />
+<input type="text" name="rock shrimp" placeholder="اسم نفر 3 baraye rock shrimp" />
+<input type="text" name="rock shrimp" placeholder="اسم نفر 4 baraye rock shrimp" />
+<input type="text" name="rock shrimp" placeholder="اسم نفر 5 baraye rock shrimp" />
+
+<label>fried fish - 9,900,000 تومان</label>
+<input type="text" name="fried fish" placeholder="اسم نفر 1 baraye fried fish" />
+<input type="text" name="fried fish" placeholder="اسم نفر 2 baraye fried fish" />
+<input type="text" name="fried fish" placeholder="اسم نفر 3 baraye fried fish" />
+<input type="text" name="fried fish" placeholder="اسم نفر 4 baraye fried fish" />
+<input type="text" name="fried fish" placeholder="اسم نفر 5 baraye fried fish" />
+
+<label>sushiantdrink - 1,800,000 تومان</label>
+<input type="text" name="sushiantdrink" placeholder="اسم نفر 1 baraye sushiantdrink" />
+<input type="text" name="sushiantdrink" placeholder="اسم نفر 2 baraye sushiantdrink" />
+<input type="text" name="sushiantdrink" placeholder="اسم نفر 3 baraye sushiantdrink" />
+<input type="text" name="sushiantdrink" placeholder="اسم نفر 4 baraye sushiantdrink" />
+<input type="text" name="sushiantdrink" placeholder="اسم نفر 5 baraye sushiantdrink" />
+
+<label>ginger lemonade - 1,820,000 تومان</label>
+<input type="text" name="ginger lemonade" placeholder="اسم نفر 1 baraye ginger lemonade" />
+<input type="text" name="ginger lemonade" placeholder="اسم نفر 2 baraye ginger lemonade" />
+<input type="text" name="ginger lemonade" placeholder="اسم نفر 3 baraye ginger lemonade" />
+<input type="text" name="ginger lemonade" placeholder="اسم نفر 4 baraye ginger lemonade" />
+<input type="text" name="ginger lemonade" placeholder="اسم نفر 5 baraye ginger lemonade" />
+
+<label>crispy noodle - 6,400,000 تومان</label>
+<input type="text" name="crispy noodle" placeholder="اسم نفر 1 baraye crispy noodle" />
+<input type="text" name="crispy noodle" placeholder="اسم نفر 2 baraye crispy noodle" />
+<input type="text" name="crispy noodle" placeholder="اسم نفر 3 baraye crispy noodle" />
+<input type="text" name="crispy noodle" placeholder="اسم نفر 4 baraye crispy noodle" />
+<input type="text" name="crispy noodle" placeholder="اسم نفر 5 baraye crispy noodle" />
+
+<label>coca zero - 370,000 تومان</label>
+<input type="text" name="coca zero" placeholder="اسم نفر 1 baraye coca zero" />
+<input type="text" name="coca zero" placeholder="اسم نفر 2 baraye coca zero" />
+<input type="text" name="coca zero" placeholder="اسم نفر 3 baraye coca zero" />
+<input type="text" name="coca zero" placeholder="اسم نفر 4 baraye coca zero" />
+<input type="text" name="coca zero" placeholder="اسم نفر 5 baraye coca zero" />
+
+<label>coca zero - 370,000 تومان</label>
+<input type="text" name="coca zero" placeholder="اسم نفر 1 baraye coca zero" />
+<input type="text" name="coca zero" placeholder="اسم نفر 2 baraye coca zero" />
+<input type="text" name="coca zero" placeholder="اسم نفر 3 baraye coca zero" />
+<input type="text" name="coca zero" placeholder="اسم نفر 4 baraye coca zero" />
+<input type="text" name="coca zero" placeholder="اسم نفر 5 baraye coca zero" />
+
+<label>Shisaido Roll - 1,090,000 تومان</label>
+<input type="text" name="Shisaido Roll" placeholder="اسم نفر 1 baraye Shisaido Roll" />
+<input type="text" name="Shisaido Roll" placeholder="اسم نفر 2 baraye Shisaido Roll" />
+<input type="text" name="Shisaido Roll" placeholder="اسم نفر 3 baraye Shisaido Roll" />
+<input type="text" name="Shisaido Roll" placeholder="اسم نفر 4 baraye Shisaido Roll" />
+<input type="text" name="Shisaido Roll" placeholder="اسم نفر 5 baraye Shisaido Roll" />
+
+<label>capri roll - 1,800,000 تومان</label>
+<input type="text" name="capri roll" placeholder="اسم نفر 1 baraye capri roll" />
+<input type="text" name="capri roll" placeholder="اسم نفر 2 baraye capri roll" />
+<input type="text" name="capri roll" placeholder="اسم نفر 3 baraye capri roll" />
+<input type="text" name="capri roll" placeholder="اسم نفر 4 baraye capri roll" />
+<input type="text" name="capri roll" placeholder="اسم نفر 5 baraye capri roll" />
+
+<label>ginger mojito - 1,050,000 تومان</label>
+<input type="text" name="ginger mojito" placeholder="اسم نفر 1 baraye ginger mojito" />
+<input type="text" name="ginger mojito" placeholder="اسم نفر 2 baraye ginger mojito" />
+<input type="text" name="ginger mojito" placeholder="اسم نفر 3 baraye ginger mojito" />
+<input type="text" name="ginger mojito" placeholder="اسم نفر 4 baraye ginger mojito" />
+<input type="text" name="ginger mojito" placeholder="اسم نفر 5 baraye ginger mojito" />
+
+<label>sea salad - 1,120,000 تومان</label>
+<input type="text" name="sea salad" placeholder="اسم نفر 1 baraye sea salad" />
+<input type="text" name="sea salad" placeholder="اسم نفر 2 baraye sea salad" />
+<input type="text" name="sea salad" placeholder="اسم نفر 3 baraye sea salad" />
+<input type="text" name="sea salad" placeholder="اسم نفر 4 baraye sea salad" />
+<input type="text" name="sea salad" placeholder="اسم نفر 5 baraye sea salad" />
+
+<label>garlic steak - 3,050,000 تومان</label>
+<input type="text" name="garlic steak" placeholder="اسم نفر 1 baraye garlic steak" />
+<input type="text" name="garlic steak" placeholder="اسم نفر 2 baraye garlic steak" />
+<input type="text" name="garlic steak" placeholder="اسم نفر 3 baraye garlic steak" />
+<input type="text" name="garlic steak" placeholder="اسم نفر 4 baraye garlic steak" />
+<input type="text" name="garlic steak" placeholder="اسم نفر 5 baraye garlic steak" />
+
+<label>ocean roll - 1,550,000 تومان</label>
+<input type="text" name="ocean roll" placeholder="اسم نفر 1 baraye ocean roll" />
+<input type="text" name="ocean roll" placeholder="اسم نفر 2 baraye ocean roll" />
+<input type="text" name="ocean roll" placeholder="اسم نفر 3 baraye ocean roll" />
+<input type="text" name="ocean roll" placeholder="اسم نفر 4 baraye ocean roll" />
+<input type="text" name="ocean roll" placeholder="اسم نفر 5 baraye ocean roll" />
+
+<label>nigiri salmon - 1,450,000 تومان</label>
+<input type="text" name="nigiri salmon" placeholder="اسم نفر 1 baraye nigiri salmon" />
+<input type="text" name="nigiri salmon" placeholder="اسم نفر 2 baraye nigiri salmon" />
+<input type="text" name="nigiri salmon" placeholder="اسم نفر 3 baraye nigiri salmon" />
+<input type="text" name="nigiri salmon" placeholder="اسم نفر 4 baraye nigiri salmon" />
+<input type="text" name="nigiri salmon" placeholder="اسم نفر 5 baraye nigiri salmon" />
+
+<label>chicken cream - 330,000 تومان</label>
+<input type="text" name="chicken cream" placeholder="اسم نفر 1 baraye chicken cream" />
+<input type="text" name="chicken cream" placeholder="اسم نفر 2 baraye chicken cream" />
+<input type="text" name="chicken cream" placeholder="اسم نفر 3 baraye chicken cream" />
+<input type="text" name="chicken cream" placeholder="اسم نفر 4 baraye chicken cream" />
+<input type="text" name="chicken cream" placeholder="اسم نفر 5 baraye chicken cream" />
+
+<label>chicken cream - 330,000 تومان</label>
+<input type="text" name="chicken cream" placeholder="اسم نفر 1 baraye chicken cream" />
+<input type="text" name="chicken cream" placeholder="اسم نفر 2 baraye chicken cream" />
+<input type="text" name="chicken cream" placeholder="اسم نفر 3 baraye chicken cream" />
+<input type="text" name="chicken cream" placeholder="اسم نفر 4 baraye chicken cream" />
+<input type="text" name="chicken cream" placeholder="اسم نفر 5 baraye chicken cream" />
+
+<label>mojito - 1,450,000 تومان</label>
+<input type="text" name="mojito" placeholder="اسم نفر 1 baraye mojito" />
+<input type="text" name="mojito" placeholder="اسم نفر 2 baraye mojito" />
+<input type="text" name="mojito" placeholder="اسم نفر 3 baraye mojito" />
+<input type="text" name="mojito" placeholder="اسم نفر 4 baraye mojito" />
+<input type="text" name="mojito" placeholder="اسم نفر 5 baraye mojito" />
+
+<label>lemonade - 330,000 تومان</label>
+<input type="text" name="lemonade" placeholder="اسم نفر 1 baraye lemonade" />
+<input type="text" name="lemonade" placeholder="اسم نفر 2 baraye lemonade" />
+<input type="text" name="lemonade" placeholder="اسم نفر 3 baraye lemonade" />
+<input type="text" name="lemonade" placeholder="اسم نفر 4 baraye lemonade" />
+<input type="text" name="lemonade" placeholder="اسم نفر 5 baraye lemonade" />
+
+<label>lemonade - 330,000 تومان</label>
+<input type="text" name="lemonade" placeholder="اسم نفر 1 baraye lemonade" />
+<input type="text" name="lemonade" placeholder="اسم نفر 2 baraye lemonade" />
+<input type="text" name="lemonade" placeholder="اسم نفر 3 baraye lemonade" />
+<input type="text" name="lemonade" placeholder="اسم نفر 4 baraye lemonade" />
+<input type="text" name="lemonade" placeholder="اسم نفر 5 baraye lemonade" />
+
+<label>mineral - 330,000 تومان</label>
+<input type="text" name="mineral" placeholder="اسم نفر 1 baraye mineral" />
+<input type="text" name="mineral" placeholder="اسم نفر 2 baraye mineral" />
+<input type="text" name="mineral" placeholder="اسم نفر 3 baraye mineral" />
+<input type="text" name="mineral" placeholder="اسم نفر 4 baraye mineral" />
+<input type="text" name="mineral" placeholder="اسم نفر 5 baraye mineral" />
+
+        <input type="hidden" name="sessionId" value="2025-04-03T12:27:40.870+03:30" />
         <button type="submit">ثبت نهایی ✅</button>
       </form>
       <div class="footer">
@@ -98,13 +236,3 @@
     </body>
   </html>
   
-
-<form method="POST" action="https://matin111.app.n8n.cloud/webhook/28f914f4-58ba-4324-ae8b-20ca2aed4675/recive/:data">
-  <!-- field ha -->
-  <input type="text" name="sushi" value="Ali" />
-  <input type="text" name="sushi" value="Sara" />
-  <input type="text" name="burger" value="Amir" />
-  <input type="hidden" name="sessionId" value="123456" />
-  <button type="submit">ثبت نهایی ✅</button>
-</form>
-
