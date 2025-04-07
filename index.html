@@ -1,113 +1,114 @@
+<style>
+  body {
+    padding: 20px;
+    direction: rtl;
+  }
 
-  <html>
-    <head>
-      <meta charset="UTF-8" />
-      <title>DineSplit 🍽️</title>
-      <style>
-        body {
-          font-family: Vazirmatn, sans-serif;
-          background-color: #121212;
-          color: #ffffff;
-          padding: 20px;
-          direction: rtl;
-        }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #00c896;
+  }
 
-        h1 {
-          text-align: center;
-          font-size: 28px;
-          margin-bottom: 10px;
-          color: #00c896;
-        }
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 0;
+  }
 
-        h2 {
-          text-align: center;
-          color: #ffffff;
-          font-size: 20px;
-          margin-top: 0;
-        }
+  .item-block {
+    margin-bottom: 25px;
+  }
 
-        .item-block {
-          margin-bottom: 25px;
-        }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffd369;
+  }
 
-        label {
-          display: block;
-          margin-bottom: 10px;
-          font-weight: bold;
-          font-size: 16px;
-          color: #ffd369;
-        }
+  .toman {
+    font-size: 14px;
+    color: #bbb;
+  }
 
-        .toman {
-          font-size: 14px;
-          color: #bbb;
-        }
+  .input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-        .input-row {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 10px;
-        }
+  .input-row input[type="text"] {
+    width: 80px;
+    padding: 6px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-size: 14px;
+  }
 
-        .input-row input[type="text"] {
-          width: 80px;
-          padding: 6px;
-          border: 1px solid #888;
-          border-radius: 6px;
-          background-color: #1f1f1f;
-          color: #fff;
-          font-size: 14px;
-        }
+  button {
+    background-color: #00c896;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
 
-        button {
-          background-color: #00c896;
-          color: white;
-          border: none;
-          padding: 12px 20px;
-          border-radius: 6px;
-          cursor: pointer;
-          font-weight: bold;
-          display: block;
-          width: 100%;
-          margin-top: 30px;
-          font-size: 16px;
-          transition: background-color 0.3s ease;
-        }
+  button:hover {
+    background-color: #00b38f;
+  }
 
-        button:hover {
-          background-color: #00b38f;
-        }
-
-        @media (max-width: 600px) {
-          .input-row input[type="text"] {
-            width: 100%;
-          }
-        }
-      </style>
-    </head>
-    <body>
-      <h1>DineSplit 🍽️</h1>
-      <h2>لطفاً مشخص کنید چه کسی چه غذایی خورده</h2>
-      <form method="POST" action="https://n8ntest111.app.n8n.cloud/webhook/submit-form">
-        <div class="item-block">
-      <label>sushiant roll - 1,090,000 <span class="toman">تومان</span></label>
-      <div class="input-row"><input type="text" name="sushiant_roll__1" /><input type="text" name="sushiant_roll__2" /><input type="text" name="sushiant_roll__3" /><input type="text" name="sushiant_roll__4" /><input type="text" name="sushiant_roll__5" /></div>
-      <input type="hidden" name="sushiant_roll__price" value="1090000" />
+  @media (max-width: 600px) {
+    .input-row input[type="text"] {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>DineSplit 🍽️</h1>
+  <h2>لطفاً مشخص کنید چه کسی چه غذایی خورده</h2>
+  <form method="POST" action="https://n8ntest111.app.n8n.cloud/webhook/submit-form">
+    <!-- Item: Sushiant Roll -->
+    <div class="item-block">
+      <label>sushiant roll - 1,090,000 تومان</label>
+      <div class="input-row">
+        <input type="text" name="sushiant_roll__1" />
+        <input type="text" name="sushiant_roll__2" />
+        <input type="text" name="sushiant_roll__3" />
+        <input type="text" name="sushiant_roll__4" />
+        <input type="text" name="sushiant_roll__5" />
+        <input type="hidden" name="sushiant_roll__price" value="1090000" />
+      </div>
     </div>
-<div class="item-block">
-      <label>sushiant roll - 1,090,000 <span class="toman">تومان</span></label>
-      <div class="input-row"><input type="text" name="sushiant_roll__1" /><input type="text" name="sushiant_roll__2" /><input type="text" name="sushiant_roll__3" /><input type="text" name="sushiant_roll__4" /><input type="text" name="sushiant_roll__5" /></div>
-      <input type="hidden" name="sushiant_roll__price" value="1090000" />
-    </div>
-<div class="item-block">
-      <label>spicy salmon roll - 1,150,000 <span class="toman">تومان</span></label>
-      <div class="input-row"><input type="text" name="spicy_salmon_roll__1" /><input type="text" name="spicy_salmon_roll__2" /><input type="text" name="spicy_salmon_roll__3" /><input type="text" name="spicy_salmon_roll__4" /><input type="text" name="spicy_salmon_roll__5" /></div>
-      <input type="hidden" name="spicy_salmon_roll__price" value="1150000" />
-    </div>
-        <input type="hidden" name="sessionId" value="2025-04-07T11:33:37.089+03:30" />
-        <button type="submit">ثبت نهایی ✅</button>
-      </form>
-    </body>
-  </html>
-  
 
+    <!-- Item: Spicy Salmon Roll -->
+    <div class="item-block">
+      <label>spicy salmon roll - 1,150,000 تومان</label>
+      <div class="input-row">
+        <input type="text" name="spicy_salmon_roll__1" />
+        <input type="text" name="spicy_salmon_roll__2" />
+        <input type="text" name="spicy_salmon_roll__3" />
+        <input type="text" name="spicy_salmon_roll__4" />
+        <input type="text" name="spicy_salmon_roll__5" />
+        <input type="hidden" name="spicy_salmon_roll__price" value="1150000" />
+      </div>
+    </div>
+
+    <input type="hidden" name="sessionId" value="${sessionId}" />
+    <button type="submit">ثبت نهایی ✅</button>
+  </form>
+</body>
+</html>
